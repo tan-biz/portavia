@@ -2970,7 +2970,7 @@ function initPortfolio() {
             if (member.hobbies && member.hobbies.length > 0) {
                 paragraph += '';
                 if (member.hobbies.length === 1) {
-                    paragraph += member.hobbies[0].toLowerCase();
+                    paragraph += member.hobbies[0];
                 } else if (member.hobbies.length === 2) {
                     paragraph += member.hobbies[0].toLowerCase() + '' + member.hobbies[1].toLowerCase();
                 } else {
@@ -2979,10 +2979,10 @@ function initPortfolio() {
                     }
                     paragraph += '' + member.hobbies[member.hobbies.length - 1].toLowerCase();
                 }
-                paragraph += '. ';
+                paragraph += '';
             }
             
-            paragraph += '' + member.designation.toLowerCase() + '';
+            //paragraph += '' + member.designation.toLowerCase() + '';
 
             const talentsPageBody = document.getElementById('talentsPageBody');
             
